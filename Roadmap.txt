@@ -1,0 +1,13 @@
+Scooby-Doo: Mayan Mayhem Roadmap | Sujeito a mudanças.
+
+	1st Map: Jungle
+1. Create Shaggy and Scooby walk movement.
+2. Set the map colisions.
+3. Create the walking animation of Shaggy | Scooby.
+4. Set the map enemies.
+5. Create the enemies attack animation. 
+6. Make the scare animation of Shaggy | Scooby.
+7. Implement the fear-o-meter
+8. Create and implement the Game Over screen with the replay button.
+9. Set the usuable objects on the map.
+10.Make the animation of Shaggy | Scooby using the objects.
