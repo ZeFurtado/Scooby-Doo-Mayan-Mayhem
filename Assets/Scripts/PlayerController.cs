@@ -1,22 +1,19 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
-using Unity.Collections;
-using Unity.VisualScripting;
 using UnityEngine;
 
-public class Scooby : MonoBehaviour
+public class PlayerController : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
     {
-
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        float velocidade = 0.7f;
+        float velocidade;
         float xKey = Input.GetAxis("Horizontal");
         float yKey = Input.GetAxis("Vertical");
 
@@ -25,11 +22,17 @@ public class Scooby : MonoBehaviour
 
         float timeSinceLastFrame = Time.deltaTime;
 
+
+        if(xKey!= 0 && yKey != 0)
+        {
+            velocidade = 0.4f;
+        }else
+        {
+            velocidade = 0.6f;
+        }
+
         Vector3 translation = position * velocidade * timeSinceLastFrame;
-
         transform.Translate(translation);
-
-        Debug.Log(xKey);
-        Debug.Log(yKey);
+        
     }
 }
